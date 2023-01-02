@@ -61,6 +61,6 @@ for i in range(allnum):
     ans = money[i]*(i+1)
     if totleMoney<=ans:
         totleMoney = ans
-        maxMoney = money[i]
+        minMoney = money[i]
 
-print(totleMoney,maxMoney)
+print(totleMoney,minMoney)
