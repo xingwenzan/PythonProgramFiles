@@ -23,11 +23,9 @@ from functools import cmp_to_key
 import numpy as np
 
 allNum = 10 ** 6 + 10
-w = np.zeros(allNum)
 s = np.zeros(allNum)
 
 for i in range(allNum):
-        w[i] = i+1
         j = i
         while (j > 0):
             s[i] += j % 10
