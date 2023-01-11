@@ -1,5 +1,5 @@
 # https://www.acwing.com/problem/content/787/
-import TemplateFunction
+from 算法.AlgorithmTemplate import BasicAlgorithms
 
 n = int(input())
 lst1 = list(map(int, input().split()))
@@ -41,6 +41,6 @@ def quick_sort(lst, l, r):
     quick_sort(lst, i, r)
 '''
 
-TemplateFunction.quick_sort(lst1, 0, n - 1)
+BasicAlgorithms.quick_sort(lst1, 0, n - 1)
 
 print(" ".join(map(str,lst1)))
