@@ -31,6 +31,6 @@ def quick_choose(lst, l, r, k): # 要查的数列，左边界索引，右边界�
         if i<j : lst[i], lst[j] = lst[j], lst[i]
 
     if k<=i-l: return quick_choose(lst, l, i-1, k)
-    else: return quick_choose(lst,ji,r,k-(j-l))
+    else: return quick_choose(lst,i,r,k-(i-l))
 
     # print(lst(k-1))
