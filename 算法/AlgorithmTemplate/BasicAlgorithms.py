@@ -36,4 +36,38 @@ def quick_choose(lst, l, r, k):  # 要查的数列，左边界索引，右边界
     else:
         return quick_choose(lst, i, r, k - (i - l))
 
-    # print(lst(k-1))
+
+# 归并排序 O(nlogn) #https://www.acwing.com/problem/content/789/
+def merge_sort(lst, l, r):
+    if l >= r: return
+    mid = l + r >> 1
+    merge_sort(lst, l, mid)
+    merge_sort(lst, mid + 1, r)
+
+    i = l
+    j = mid+1
+    tmp = [0] * (r - l + 1)
+    k = 0
+
+    while i <= mid and j <= r:
+        if lst[i] <= lst[j]:
+            tmp[k] = lst[i]
+            i += 1
+            k += 1
+        else:
+            tmp[k] = lst[j]
+            j += 1
+            k += 1
+    while i <= mid:
+        tmp[k]=lst[i]
+        i += 1
+        k += 1
+    while j <= r:
+        tmp[k] = lst[j]
+        j += 1
+        k += 1
+
+    q = 0
+    for p in range(l, r + 1, 1):
+        lst[p] = tmp[q]
+        q += 1
