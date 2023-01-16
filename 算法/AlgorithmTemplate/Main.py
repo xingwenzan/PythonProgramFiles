@@ -1,16 +1,18 @@
 '''  ---用于实验算法模板---  '''
 
-# 快排实验/归并实验
+# 快排实验/归并实验/逆序对计数实验
 
 from 算法.AlgorithmTemplate import BasicAlgorithms
 
 n = int(input())
 lst1 = list(map(int, input().split()))
 
-#BasicAlgorithms.quick_sort(lst1, 0, n - 1)
-BasicAlgorithms.merge_sort(lst1, 0, n - 1)
+#BasicAlgorithms.quick_sort(lst1, 0, n - 1) # 快排实验
+#BasicAlgorithms.merge_sort(lst1, 0, n - 1) # 归并实验
+res = BasicAlgorithms.Number_of_reversed_pairs(lst1, 0, n - 1) # 逆序对计数实验
 
-print(" ".join(map(str,lst1)))
+#print(" ".join(map(str,lst1)))
+print(res)
 
 
 # 快选实验

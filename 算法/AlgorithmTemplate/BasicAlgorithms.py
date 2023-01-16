@@ -71,3 +71,37 @@ def merge_sort(lst, l, r):
     for p in range(l, r + 1, 1):
         lst[p] = tmp[q]
         q += 1
+
+# 逆序对计数 - 归并排序应用 O(nlogn) https://www.acwing.com/problem/content/790/
+def Number_of_reversed_pairs(lst, l, r):
+    if l>=r: return 0
+    mid = l+r>>1
+    res = Number_of_reversed_pairs(lst, l, mid) + Number_of_reversed_pairs(lst, mid+1, r)
+    i,j,k = l,mid+1,0
+    tmp = [0]*(r-l+1)
+    while i<=mid and j<=r:
+        if lst[i]<=lst[j]:
+            tmp[k]=lst[i]
+            i += 1
+            k += 1
+        else:
+            tmp[k] = lst[j]
+            j += 1
+            k += 1
+            res += mid-i+1
+    while i<=mid:
+        tmp[k] = lst[i]
+        i += 1
+        k += 1
+    while j <= r:
+        tmp[k] = lst[j]
+        j += 1
+        k += 1
+
+    b = 0
+    for a in range(l,r+1,1):
+        lst[a] = tmp[b]
+        a += 1
+        b += 1
+
+    return res
