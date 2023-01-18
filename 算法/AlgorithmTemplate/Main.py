@@ -15,6 +15,7 @@ res = BasicAlgorithms.Number_of_reversed_pairs(lst1, 0, n - 1) # 逆序对计数
 print(res)
 '''
 
+
 # 快选实验
 '''
 from 算法.AlgorithmTemplate import BasicAlgorithms
@@ -27,10 +28,10 @@ ans = BasicAlgorithms.quick_choose(lst,0,n-1,k)
 print(ans)
 '''
 
+
 # 二分实验
 n, q = map(int, input().split())
 lst = list(map(int, input().split()))
-
 
 def dichotomize_left(lst, l, r, num):
     while l < r:
@@ -41,7 +42,6 @@ def dichotomize_left(lst, l, r, num):
             r = mid - 1
     return l
 
-
 def dichotomize_right(lst, l, r, num):
     while l < r:
         mid = l + r >> 1
@@ -50,7 +50,6 @@ def dichotomize_right(lst, l, r, num):
         else:
             l = mid + 1
     return r
-
 
 for i in range(q):
     num = int(input())
