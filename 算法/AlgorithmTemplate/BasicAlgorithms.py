@@ -105,3 +105,20 @@ def Number_of_reversed_pairs(lst, l, r):
         b += 1
 
     return res
+
+# 二分 O() https://www.acwing.com/problem/content/791/
+ # 不可调用，提供思路
+ # 模板 1：左半边为 true
+def dichotomize_left(l,r,check):
+    while l<r:
+        mid = l+r+1>>1
+        if check==True:l = mid
+        else:r = mid-1
+    return l
+ # 模板 2：右半边为 true
+def dichotomize_right(l,r,check):
+    while l<r:
+        mid = l+r>>1
+        if check==True:r = mid
+        else:l = mid+1
+    return r
