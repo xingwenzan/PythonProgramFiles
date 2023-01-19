@@ -1,5 +1,7 @@
 # 基础算法模板/快速调用
 
+
+
 # 快速排序 O(nlogn) https://www.acwing.com/problem/content/787/
 def quick_sort(lst, l, r):  # 要查的数列，左边界，右边界
     if l >= r: return  # 左边界索引不小于右边界索引，无法进行，不搞
@@ -72,6 +74,7 @@ def merge_sort(lst, l, r):
         lst[p] = tmp[q]
         q += 1
 
+
 # 逆序对计数 - 归并排序应用 O(nlogn) https://www.acwing.com/problem/content/790/
 def Number_of_reversed_pairs(lst, l, r):
     if l>=r: return 0
@@ -105,6 +108,7 @@ def Number_of_reversed_pairs(lst, l, r):
         b += 1
 
     return res
+
 
 # 二分 O() https://www.acwing.com/problem/content/791/
  # 不可调用，提供思路
