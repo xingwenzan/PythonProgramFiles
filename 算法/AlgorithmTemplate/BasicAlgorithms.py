@@ -137,7 +137,7 @@ def dichotomize_right(l, r, check):
 
 # 高精度算法
 # 判断大小
-def ratio_str(a,b):
+def ratio_str_HighPrecisionAlgorithm(a, b):
     if len(a)!=len(b):return len(a)>len(b)
     for i in range(len(a)):
         if a[i]!=b[i]:
@@ -171,7 +171,7 @@ def high_precision_addition(a, b):
 # 高精度算法
 # 减法 O() https://www.acwing.com/problem/content/794/
 def high_precision_subtraction(a, b):
-    if not ratio_str(a, b):
+    if not ratio_str_HighPrecisionAlgorithm(a, b):
         return -high_precision_subtraction(b, a)
     a = a[::-1]
     b = b[::-1]
