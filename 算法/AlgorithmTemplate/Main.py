@@ -32,7 +32,8 @@ print(ans)
 # 高精度算法实验
 
 from 算法.AlgorithmTemplate import BasicAlgorithms
-a = input()[::-1]
-b = input()[::-1]
-c = BasicAlgorithms.high_precision_addition(a,b)
+a = input()
+b = input()
+#c = BasicAlgorithms.high_precision_addition(a,b) # 加法
+c = BasicAlgorithms.high_precision_subtraction(a,b) # 减法
 print(c)
