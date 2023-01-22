@@ -29,4 +29,10 @@ print(ans)
 '''
 
 
+# 高精度算法实验
 
+from 算法.AlgorithmTemplate import BasicAlgorithms
+a = input()[::-1]
+b = input()[::-1]
+c = BasicAlgorithms.high_precision_addition(a,b)
+print(c)
