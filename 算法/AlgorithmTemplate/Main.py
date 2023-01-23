@@ -36,5 +36,8 @@ a = input()
 b = input()
 #c = BasicAlgorithms.high_precision_addition(a,b) # 加法
 #c = BasicAlgorithms.high_precision_subtraction(a,b) # 减法
-c = BasicAlgorithms.high_precision_multiplication(a,b) # 乘法
+#c = BasicAlgorithms.high_precision_multiplication(a,b) # 乘法
+#c,d = BasicAlgorithms.high_precision_division_low(a,b) # 除法(高精度/低精度)
+c,d = BasicAlgorithms.high_precision_division_high(a,b) # 除法(高精度/高精度)
 print(c)
+print(d)

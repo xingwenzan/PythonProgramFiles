@@ -194,11 +194,12 @@ def high_precision_subtraction(a, b):
                 t = 1
     # c.reverse()
     ans = ''.join(reversed(c))
-    return ans
+    return int(ans)
 
 
 # 高精度算法
 # 乘法 O() https://www.acwing.com/problem/content/795/
+# (高精度*高精度 or 高精度*低精度)
 def high_precision_multiplication(a, b):
     if len(a) < len(b): return high_precision_multiplication(b, a)
     a = a[::-1]
@@ -207,11 +208,48 @@ def high_precision_multiplication(a, b):
     for i in range(len(b)):
         t = 0
         for j in range(len(a)):
-            t += int(a[j]) * int(b[i]) + int(c[i+j])
-            c[i+j] = str(t % 10)
+            t += int(a[j]) * int(b[i]) + int(c[i + j])
+            c[i + j] = str(t % 10)
             t //= 10
-        t += int(c[i+len(a)])
-        c[i+len(a)] = str(t%10)
+        t += int(c[i + len(a)])
+        c[i + len(a)] = str(t % 10)
     # c.reverse()
     ans = ''.join(reversed(c))
     return int(ans)
+
+
+# 高精度算法
+# 除法 O() https://www.acwing.com/problem/content/796/
+# (高精度/低精度)
+def high_precision_division_low(a, b):
+    # if len(a) < len(b): return high_precision_division(b,a)
+    b = int(b)
+    c = ["0"] * (len(a))
+    t = 0
+    for i in range(len(a)):
+        c[i] = str((int(a[i]) + t * 10) // b)
+        t = (int(a[i]) + t * 10) % b
+    ans = ''.join(c)
+    return int(ans), t
+
+
+# 高精度算法
+# 除法 O() https://www.acwing.com/problem/content/796/
+# (高精度/高精度)
+def high_precision_division_high(a, b):
+    c = ["0"] * (len(a))
+    k = ""
+    for i in range(len(a)):
+        k += a[i]
+        if ratio_str_HighPrecisionAlgorithm(k, b):
+            for j in range(9, 0, -1):
+                tmp = str(high_precision_multiplication(b, str(j)))
+                if ratio_str_HighPrecisionAlgorithm(k, tmp):
+                    c[i] = str(j)
+                    k = str(high_precision_subtraction(k, tmp))
+                    break
+                else:
+                    continue
+        else:continue
+    ans = ''.join(c)
+    return int(ans), k
