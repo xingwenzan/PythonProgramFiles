@@ -235,7 +235,7 @@ def high_precision_division_low(a, b):
 
 # 高精度算法
 # 除法 O() https://www.acwing.com/problem/content/796/
-# (高精度/高精度)
+# (高精度/高精度) (没通过)
 def high_precision_division_high(a, b):
     c = ["0"] * (len(a))
     k = ""
