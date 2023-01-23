@@ -138,10 +138,10 @@ def dichotomize_right(l, r, check):
 # 高精度算法
 # 判断大小
 def ratio_str_HighPrecisionAlgorithm(a, b):
-    if len(a)!=len(b):return len(a)>len(b)
+    if len(a) != len(b): return len(a) > len(b)
     for i in range(len(a)):
-        if a[i]!=b[i]:
-            return int(a[i])>int(b[i])
+        if a[i] != b[i]:
+            return int(a[i]) > int(b[i])
     return True
 
 
@@ -178,7 +178,7 @@ def high_precision_subtraction(a, b):
     c = [0] * (len(a))
     t = 0
     for i in range(len(b)):
-        if int(a[i])-t >= int(b[i]):
+        if int(a[i]) - t >= int(b[i]):
             c[i] = str(int(a[i]) - int(b[i]) - t)
             t = 0
         else:
@@ -186,7 +186,7 @@ def high_precision_subtraction(a, b):
             t = 1
     if len(a) > len(b):
         for i in range(len(b), len(a)):
-            if int(a[i])-t >= 0:
+            if int(a[i]) - t >= 0:
                 c[i] = str(int(a[i]) - t)
                 t = 0
             else:
@@ -195,3 +195,23 @@ def high_precision_subtraction(a, b):
     # c.reverse()
     ans = ''.join(reversed(c))
     return ans
+
+
+# 高精度算法
+# 乘法 O() https://www.acwing.com/problem/content/795/
+def high_precision_multiplication(a, b):
+    if len(a) < len(b): return high_precision_multiplication(b, a)
+    a = a[::-1]
+    b = b[::-1]
+    c = ["0"] * (len(a) + len(b))
+    for i in range(len(b)):
+        t = 0
+        for j in range(len(a)):
+            t += int(a[j]) * int(b[i]) + int(c[i+j])
+            c[i+j] = str(t % 10)
+            t //= 10
+        t += int(c[i+len(a)])
+        c[i+len(a)] = str(t%10)
+    # c.reverse()
+    ans = ''.join(reversed(c))
+    return int(ans)

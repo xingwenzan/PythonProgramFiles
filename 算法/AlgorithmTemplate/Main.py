@@ -35,5 +35,6 @@ from 算法.AlgorithmTemplate import BasicAlgorithms
 a = input()
 b = input()
 #c = BasicAlgorithms.high_precision_addition(a,b) # 加法
-c = BasicAlgorithms.high_precision_subtraction(a,b) # 减法
+#c = BasicAlgorithms.high_precision_subtraction(a,b) # 减法
+c = BasicAlgorithms.high_precision_multiplication(a,b) # 乘法
 print(c)
