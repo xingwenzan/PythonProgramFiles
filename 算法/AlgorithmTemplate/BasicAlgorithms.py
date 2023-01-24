@@ -253,3 +253,13 @@ def high_precision_division_high(a, b):
         else:continue
     ans = ''.join(c)
     return int(ans), k
+
+
+# 前缀和 O() https://www.acwing.com/problem/content/797/
+def prefix_sum(lst):
+    s = [0]
+    t = 0
+    for i in range(len(lst)):
+        t += lst[i]
+        s.append(t)
+    return s

@@ -30,7 +30,7 @@ print(ans)
 
 
 # 高精度算法实验
-
+'''
 from 算法.AlgorithmTemplate import BasicAlgorithms
 a = input()
 b = input()
@@ -41,3 +41,16 @@ b = input()
 c,d = BasicAlgorithms.high_precision_division_high(a,b) # 除法(高精度/高精度)
 print(c)
 print(d)
+'''
+
+
+# 前缀和实验
+
+import BasicAlgorithms
+
+n,m = map(int,input().split())
+lst = list(map(int,input().split()))
+s = BasicAlgorithms.prefix_sum(lst)
+for i in range(m):
+    l,r = map(int,input().split())
+    print(s[r]-s[l-1])
