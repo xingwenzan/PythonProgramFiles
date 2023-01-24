@@ -255,11 +255,22 @@ def high_precision_division_high(a, b):
     return int(ans), k
 
 
-# 前缀和 O() https://www.acwing.com/problem/content/797/
-def prefix_sum(lst):
+# 前缀和
+# 一维前缀和 O() https://www.acwing.com/problem/content/797/
+def prefix_sum_1D(lst):
     s = [0]
     t = 0
     for i in range(len(lst)):
         t += lst[i]
         s.append(t)
+    return s
+
+
+# 前缀和
+# 二维前缀和 O() https://www.acwing.com/problem/content/798/
+def prefix_sum_2D(lst, height, width):
+    s = [[0 for i in range(width+1)] for i in range(height+1)]
+    for i in range(1,height+1):
+        for j in range(1,width+1):
+            s[i][j] = s[i-1][j] + s[i][j-1] - s[i-1][j-1] + lst[i-1][j-1]
     return s
