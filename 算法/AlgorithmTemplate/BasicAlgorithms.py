@@ -282,3 +282,12 @@ def finite_difference_1D(lst, l, r, n):
     lst[l] += n
     lst[r+1] -= n
     return lst
+
+# 差分
+# 二维差分 O(n) https://www.acwing.com/problem/content/800/
+def finite_difference_2D(lst, x1, y1, x2, y2, n):
+    lst[x1][y1] += n
+    lst[x1][y2+1] -= n
+    lst[x2+1][y1] -= n
+    lst[x2+1][y2+1] += n
+    return lst

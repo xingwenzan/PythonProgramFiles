@@ -41,10 +41,10 @@ print(d)
 
 
 # 前缀和实验/差分实验 (一维)
-
+'''
 n,m = map(int,input().split())
 lst = list(map(int,input().split()))
-add = [0]*(n)
+add = [0]*(n+1)
 #s = BasicAlgorithms.prefix_sum_1D(lst) # 前缀和
 for i in range(m):
     l,r,c = map(int,input().split())
@@ -55,18 +55,24 @@ for i in range(n):
     t += add[i]
     lst[i] += t
 print(*lst)#,sep=" ")
-
-
-
-# 前缀和实验 (二维)
 '''
+
+
+# 前缀和实验/差分实验 (二维)
+
 n,m,q = map(int,input().split())
 lst = []
 for i in range(n):
     lst.append(list(map(int,input().split())))
-ans = BasicAlgorithms.prefix_sum_2D(lst,n,m)
+#ans = BasicAlgorithms.prefix_sum_2D(lst,n,m) # 前缀和
+add = [[0 for i in range(m+1)] for i in range(n+1)]
 for i in range(q):
-    x1,y1,x2,y2 = map(int,input().split())
-    out = ans[x2][y2] - ans[x1-1][y2] - ans[x2][y1-1] + ans[x1-1][y1-1]
-    print(out)
-'''
+    x1,y1,x2,y2,c = map(int,input().split())
+    #out = ans[x2][y2] - ans[x1-1][y2] - ans[x2][y1-1] + ans[x1-1][y1-1] # 前缀和
+    #print(out) # 前缀和
+    add = BasicAlgorithms.finite_difference_2D(add,x1-1,y1-1,x2-1,y2-1,c) # 差分
+add = BasicAlgorithms.prefix_sum_2D(add,n+1,m+1) # 差分实验（前缀和函数）
+for i in range(n): # 差分
+    for j in range(m):
+        lst[i][j] += add[i+1][j+1] # （add 使用的前缀和，左上两边各多一条）
+    print(*lst[i])
