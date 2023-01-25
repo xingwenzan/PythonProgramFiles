@@ -256,7 +256,7 @@ def high_precision_division_high(a, b):
 
 
 # 前缀和
-# 一维前缀和 O() https://www.acwing.com/problem/content/797/
+# 一维前缀和 O(n) https://www.acwing.com/problem/content/797/
 def prefix_sum_1D(lst):
     s = [0]
     t = 0
@@ -274,3 +274,11 @@ def prefix_sum_2D(lst, height, width):
         for j in range(1,width+1):
             s[i][j] = s[i-1][j] + s[i][j-1] - s[i-1][j-1] + lst[i-1][j-1]
     return s
+
+
+# 差分
+# 一维差分 O(n) https://www.acwing.com/problem/content/799/
+def finite_difference_1D(lst, l, r, n):
+    lst[l] += n
+    lst[r+1] -= n
+    return lst

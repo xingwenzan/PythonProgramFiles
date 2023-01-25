@@ -40,19 +40,26 @@ print(d)
 '''
 
 
-# 前缀和实验 一维
-'''
+# 前缀和实验/差分实验 (一维)
+
 n,m = map(int,input().split())
 lst = list(map(int,input().split()))
-s = BasicAlgorithms.prefix_sum_1D(lst)
+add = [0]*(n)
+#s = BasicAlgorithms.prefix_sum_1D(lst) # 前缀和
 for i in range(m):
-    l,r = map(int,input().split())
-    print(s[r]-s[l-1])
+    l,r,c = map(int,input().split())
+    #print(s[r]-s[l-1]) # 前缀和
+    add = BasicAlgorithms.finite_difference_1D(add,l-1,r-1,c)
+t = 0
+for i in range(n):
+    t += add[i]
+    lst[i] += t
+print(*lst)#,sep=" ")
+
+
+
+# 前缀和实验 (二维)
 '''
-
-
-# 前缀和实验 二维
-
 n,m,q = map(int,input().split())
 lst = []
 for i in range(n):
@@ -62,3 +69,4 @@ for i in range(q):
     x1,y1,x2,y2 = map(int,input().split())
     out = ans[x2][y2] - ans[x1-1][y2] - ans[x2][y1-1] + ans[x1-1][y1-1]
     print(out)
+'''
