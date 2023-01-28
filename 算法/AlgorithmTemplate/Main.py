@@ -59,7 +59,7 @@ print(*lst)#,sep=" ")
 
 
 # 前缀和实验/差分实验 (二维)
-
+'''
 n,m,q = map(int,input().split())
 lst = []
 for i in range(n):
@@ -76,3 +76,31 @@ for i in range(n): # 差分
     for j in range(m):
         lst[i][j] += add[i+1][j+1] # （add 使用的前缀和，左上两边各多一条）
     print(*lst[i])
+'''
+
+
+# 位运算实验（暴力版）
+'''
+n = int(input())
+num = list(map(int, input().split()))
+ans = [0] * n
+for i in range(n):
+    x = num[i]
+    while x != 0:
+        if x & 1 == 1: ans[i] += 1
+        x = x >> 1
+print(*ans)
+'''
+
+
+# 位运算实验（loebit 版）
+
+n = int(input())
+num = list(map(int, input().split()))
+ans = [0] * n
+for i in range(n):
+    x = num[i]
+    while x != 0:
+        x = x - BasicAlgorithms.lowbit(x)
+        ans[i] += 1
+print(*ans)

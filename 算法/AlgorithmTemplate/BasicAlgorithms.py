@@ -250,7 +250,8 @@ def high_precision_division_high(a, b):
                     break
                 else:
                     continue
-        else:continue
+        else:
+            continue
     ans = ''.join(c)
     return int(ans), k
 
@@ -269,10 +270,10 @@ def prefix_sum_1D(lst):
 # 前缀和
 # 二维前缀和 O() https://www.acwing.com/problem/content/798/
 def prefix_sum_2D(lst, height, width):
-    s = [[0 for i in range(width+1)] for i in range(height+1)]
-    for i in range(1,height+1):
-        for j in range(1,width+1):
-            s[i][j] = s[i-1][j] + s[i][j-1] - s[i-1][j-1] + lst[i-1][j-1]
+    s = [[0 for i in range(width + 1)] for i in range(height + 1)]
+    for i in range(1, height + 1):
+        for j in range(1, width + 1):
+            s[i][j] = s[i - 1][j] + s[i][j - 1] - s[i - 1][j - 1] + lst[i - 1][j - 1]
     return s
 
 
@@ -280,14 +281,21 @@ def prefix_sum_2D(lst, height, width):
 # 一维差分 O(n) https://www.acwing.com/problem/content/799/
 def finite_difference_1D(lst, l, r, n):
     lst[l] += n
-    lst[r+1] -= n
+    lst[r + 1] -= n
     return lst
+
 
 # 差分
 # 二维差分 O(n) https://www.acwing.com/problem/content/800/
 def finite_difference_2D(lst, x1, y1, x2, y2, n):
     lst[x1][y1] += n
-    lst[x1][y2+1] -= n
-    lst[x2+1][y1] -= n
-    lst[x2+1][y2+1] += n
+    lst[x1][y2 + 1] -= n
+    lst[x2 + 1][y1] -= n
+    lst[x2 + 1][y2 + 1] += n
     return lst
+
+
+# 位运算 https://www.acwing.com/video/246/
+# 原码 x=10101…… ; 反码 ~x=01010…… ; 补码 -x=~x+1 ;
+def lowbit(x):  # 取最后(右)一位 1 及之后的所有位(0)
+    return x & (-x)
