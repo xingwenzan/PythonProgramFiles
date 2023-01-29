@@ -110,29 +110,45 @@ def number_of_reversed_pairs(lst, l, r):
 
 
 # 二分 O() https://www.acwing.com/problem/content/791/
-# 不可调用，提供思路
-# 模板 1：左半边为 true
-def dichotomize_left(l, r, check):
+# 整数二分
+# 模板 1：左半边为 true（mid 在 x 左）
+def dichotomize_left(lst, x):
+    l, r = 0, len(lst) - 1
     while l < r:
         mid = l + r + 1 >> 1
-        if check == True:
+        if lst[mid] <= x:
             l = mid
         else:
             r = mid - 1
-    return l
+    return r
 
 
 # 二分 O() https://www.acwing.com/problem/content/791/
-# 不可调用，提供思路
-# 模板 2：右半边为 true
-def dichotomize_right(l, r, check):
+# 整数二分
+# 模板 2：右半边为 true（mid 在 x 右）
+def dichotomize_right(lst, x):
+    l, r = 0, len(lst) - 1
     while l < r:
         mid = l + r >> 1
-        if check == True:
+        if lst[mid] >= x:
             r = mid
         else:
             l = mid + 1
-    return r
+    return l
+
+
+# 二分 O() https://www.acwing.com/activity/content/problem/content/824/
+# 小数二分
+def dichotomize_float(num,root,digit): # digit 是保留的位数，root 是开几次方根
+    l = -100
+    r = 100
+    while r - l > 10 ** (-digit-2):
+        mid = (l + r) / 2
+        if mid ** root <= num:
+            l = mid
+        else:
+            r = mid
+    return "{:.6f}".format(l) # round(l,digit)，round 不好使
 
 
 # 高精度算法
@@ -295,7 +311,29 @@ def finite_difference_2D(lst, x1, y1, x2, y2, n):
     return lst
 
 
-# 位运算 https://www.acwing.com/video/246/
+# 位运算 https://www.acwing.com/problem/content/803/
 # 原码 x=10101…… ; 反码 ~x=01010…… ; 补码 -x=~x+1 ;
+# https://www.acwing.com/video/246/
 def lowbit(x):  # 取最后(右)一位 1 及之后的所有位(0)
     return x & (-x)
+
+
+# 离散化 O() https://www.acwing.com/problem/content/804/
+# 本体: 排序 + 去重
+# 查找: 二分
+# 应用: 前缀和（本题）
+def discretization(lst):  # 离散化本体
+    # 排序部分   最终还是 python 自带的排序快一点   循环去重比 set 快
+    # quick_sort(lst, 0, len(lst) - 1) # 3300ms 3740ms
+    # merge_sort(lst,0,len(lst)-1) # 3267ms 3316ms
+    lst.sort() # 2977ms 3073ms
+
+    # 去重部分
+    out = []
+    for i in range(len(lst)):
+        if (i == 0 or (i != 0 and lst[i] != lst[i - 1])):
+            out.append(lst[i])
+    # out = list(set(lst))
+
+    return out
+

@@ -14,7 +14,6 @@ res = BasicAlgorithms.Number_of_reversed_pairs(lst1, 0, n - 1) # 逆序对计数
 print(res)
 '''
 
-
 # 快选实验
 '''
 nk = list(map(int, input().split()))
@@ -25,6 +24,25 @@ ans = BasicAlgorithms.quick_choose(lst,0,n-1,k)
 print(ans)
 '''
 
+# 二分实验（整数二分）
+'''
+n, q = map(int, input().split())
+lst = list(map(int, input().split()))
+for i in range(q):
+    num = int(input())
+    l = BasicAlgorithms.dichotomize_left(lst, num)
+    r = BasicAlgorithms.dichotomize_right(lst, num)
+    if lst[l] != num or lst[r] != num:
+        print("-1 -1")
+    else:
+        print(str(r) + " " + str(l))
+'''
+
+# 二分实验（小数二分）
+
+n = float(input())
+ans = BasicAlgorithms.dichotomize_float(n,3,6)
+print(ans)
 
 # 高精度算法实验
 '''
@@ -38,7 +56,6 @@ c,d = BasicAlgorithms.high_precision_division_high(a,b) # 除法(高精度/高�
 print(c)
 print(d)
 '''
-
 
 # 前缀和实验/差分实验 (一维)
 '''
@@ -56,7 +73,6 @@ for i in range(n):
     lst[i] += t
 print(*lst)#,sep=" ")
 '''
-
 
 # 前缀和实验/差分实验 (二维)
 '''
@@ -78,7 +94,6 @@ for i in range(n): # 差分
     print(*lst[i])
 '''
 
-
 # 位运算实验（暴力版）
 '''
 n = int(input())
@@ -92,9 +107,8 @@ for i in range(n):
 print(*ans)
 '''
 
-
 # 位运算实验（loebit 版）
-
+'''
 n = int(input())
 num = list(map(int, input().split()))
 ans = [0] * n
@@ -104,3 +118,30 @@ for i in range(n):
         x = x - BasicAlgorithms.lowbit(x)
         ans[i] += 1
 print(*ans)
+'''
+
+# 离散化实验
+
+n, m = map(int, input().split())
+point = []
+add = []
+lr = []
+for i in range(n):
+    x, c = map(int, input().split())
+    add.append([x, c])
+    point.append(x)
+for i in range(m):
+    l, r = map(int, input().split())
+    lr.append([l, r])
+    point.append(l)
+    point.append(r)
+new_point = BasicAlgorithms.discretization(point)
+lst = [0] * (len(new_point))
+for i in range(n):
+    x = BasicAlgorithms.dichotomize_right(new_point, add[i][0])
+    lst[x] += add[i][1]
+lst = BasicAlgorithms.prefix_sum_1D(lst)
+for i in range(m):
+    l = BasicAlgorithms.dichotomize_right(new_point, lr[i][0]) + 1
+    r = BasicAlgorithms.dichotomize_right(new_point, lr[i][1]) + 1
+    print(lst[r] - lst[l - 1])

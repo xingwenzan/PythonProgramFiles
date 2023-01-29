@@ -9,7 +9,7 @@ def dichotomize_left(lst, l, r, num):
             l = mid
         else:
             r = mid - 1
-    return l
+    return r
 
 def dichotomize_right(lst, l, r, num):
     while l < r:
@@ -18,7 +18,7 @@ def dichotomize_right(lst, l, r, num):
             r = mid
         else:
             l = mid + 1
-    return r
+    return l
 
 for i in range(q):
     num = int(input())
