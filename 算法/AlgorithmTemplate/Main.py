@@ -39,10 +39,11 @@ for i in range(q):
 '''
 
 # 二分实验（小数二分）
-
+'''
 n = float(input())
 ans = BasicAlgorithms.dichotomize_float(n,3,6)
 print(ans)
+'''
 
 # 高精度算法实验
 '''
@@ -121,7 +122,7 @@ print(*ans)
 '''
 
 # 离散化实验
-
+'''
 n, m = map(int, input().split())
 point = []
 add = []
@@ -145,3 +146,14 @@ for i in range(m):
     l = BasicAlgorithms.dichotomize_right(new_point, lr[i][0]) + 1
     r = BasicAlgorithms.dichotomize_right(new_point, lr[i][1]) + 1
     print(lst[r] - lst[l - 1])
+'''
+
+# 区间合并实验
+
+n = int(input())
+lst = []
+for i in range(n):
+    x = list(map(int,input().split()))
+    lst.append(x)
+ans = BasicAlgorithms.interval_merge(lst)
+print(len(ans))

@@ -139,16 +139,16 @@ def dichotomize_right(lst, x):
 
 # 二分 O() https://www.acwing.com/activity/content/problem/content/824/
 # 小数二分
-def dichotomize_float(num,root,digit): # digit 是保留的位数，root 是开几次方根
+def dichotomize_float(num, root, digit):  # digit 是保留的位数，root 是开几次方根
     l = -100
     r = 100
-    while r - l > 10 ** (-digit-2):
+    while r - l > 10 ** (-digit - 2):
         mid = (l + r) / 2
         if mid ** root <= num:
             l = mid
         else:
             r = mid
-    return "{:.6f}".format(l) # round(l,digit)，round 不好使
+    return "{:.6f}".format(l)  # round(l,digit)，round 不好使
 
 
 # 高精度算法
@@ -326,7 +326,7 @@ def discretization(lst):  # 离散化本体
     # 排序部分   最终还是 python 自带的排序快一点   循环去重比 set 快
     # quick_sort(lst, 0, len(lst) - 1) # 3300ms 3740ms
     # merge_sort(lst,0,len(lst)-1) # 3267ms 3316ms
-    lst.sort() # 2977ms 3073ms
+    lst.sort()  # 2977ms 3073ms
 
     # 去重部分
     out = []
@@ -337,3 +337,17 @@ def discretization(lst):  # 离散化本体
 
     return out
 
+
+# 区间合并 O() https://www.acwing.com/problem/content/805/
+def interval_merge(lst):
+    lst.sort(key=lambda x: (x[0], x[1]))
+    out = [lst[0]]
+    for x in lst:
+        if x[0] <= out[-1][1]:
+            if x[1] > out[-1][1]:
+                out[-1][1] = x[1]
+            else:
+                continue
+        else:
+            out.append(x)
+    return out
