@@ -153,7 +153,7 @@ for i in range(m):
 n = int(input())
 lst = []
 for i in range(n):
-    x = list(map(int,input().split()))
+    x = list(map(int, input().split()))
     lst.append(x)
 ans = BasicAlgorithms.interval_merge(lst)
 print(len(ans))
