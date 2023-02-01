@@ -1,6 +1,6 @@
 import turtle
 
-turtle.title('PythonBingDwenDwen（公众号：Crossin的编程教室）')
+turtle.title('冰墩墩')
 
 turtle.speed(100)  # 速度
 
@@ -367,7 +367,3 @@ turtle.write("BEIJING 2022", font=('Arial', 10, 'bold italic'))
 turtle.hideturtle()
 
 turtle.done()
-
-
-
-# 来源：Crossin的编程教室
