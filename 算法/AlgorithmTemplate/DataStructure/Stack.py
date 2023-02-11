@@ -1,3 +1,5 @@
+# 模拟栈 https://www.acwing.com/problem/content/830/
+
 values = [0] * 100010
 num = 0
 
