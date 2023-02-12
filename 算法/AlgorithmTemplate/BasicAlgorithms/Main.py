@@ -1,4 +1,5 @@
 '''  ---用于实验算法模板---  '''
+from 算法.AlgorithmTemplate.BasicAlgorithms import BasicAlgorithmsTemplate
 
 # 快排实验/归并实验/逆序对计数实验
 '''
@@ -154,5 +155,5 @@ lst = []
 for i in range(n):
     x = list(map(int, input().split()))
     lst.append(x)
-ans = BasicAlgorithms.interval_merge(lst)
+ans = BasicAlgorithmsTemplate.interval_merge(lst)
 print(len(ans))
