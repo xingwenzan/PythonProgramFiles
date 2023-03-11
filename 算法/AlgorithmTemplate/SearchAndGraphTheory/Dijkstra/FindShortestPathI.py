@@ -1,4 +1,5 @@
 # Dijkstra求最短路 I https://www.acwing.com/problem/content/851/
+# 朴素方法
 
 N = 510
 inf = 10 ** 4 + 10
