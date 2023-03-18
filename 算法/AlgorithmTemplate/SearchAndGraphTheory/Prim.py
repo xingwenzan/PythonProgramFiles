@@ -5,8 +5,8 @@ adjacencyMatrix = [[inf for i in range(N)] for i in range(N)]
 distance, state = [inf] * N, [False] * N
 
 
-def add(state, end, lenght):
-    adjacencyMatrix[state][end] = adjacencyMatrix[end][state] = min(adjacencyMatrix[state][end], lenght)
+def add(start, end, length):
+    adjacencyMatrix[start][end] = adjacencyMatrix[end][start] = min(adjacencyMatrix[start][end], length)
 
 
 def prim(num):
@@ -27,8 +27,8 @@ def prim(num):
 
 n, m = map(int, input().split())
 for i in range(m):
-    start, end, lenght = map(int, input().split())
-    add(start, end, lenght)
+    start, end, length = map(int, input().split())
+    add(start, end, length)
 
 out = prim(n)
 if out == inf:
