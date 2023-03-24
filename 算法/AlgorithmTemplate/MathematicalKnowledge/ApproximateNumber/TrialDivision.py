@@ -3,7 +3,7 @@
 import heapq
 
 
-def approximationI(x):
+def approximationI(x): # 966ms
     ans = []
     num = 1
     while num <= x / num:
@@ -15,7 +15,7 @@ def approximationI(x):
     return sorted(ans)
 
 
-def approximationII(x):
+def approximationII(x): # 1157ms
     heap = []
     num = 1
     while num <= x / num:
