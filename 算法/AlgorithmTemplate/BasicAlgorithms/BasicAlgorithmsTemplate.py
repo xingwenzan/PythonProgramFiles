@@ -2,6 +2,7 @@
 
 
 # 快速排序 O(nlogn) https://www.acwing.com/problem/content/787/
+# https://www.acwing.com/activity/content/code/content/5198516/
 def quick_sort(lst, l, r):  # 要查的数列，左边界，右边界
     if l >= r: return  # 左边界索引不小于右边界索引，无法进行，不搞
     i = l - 1  # i 指针指向列表的 l 号值
