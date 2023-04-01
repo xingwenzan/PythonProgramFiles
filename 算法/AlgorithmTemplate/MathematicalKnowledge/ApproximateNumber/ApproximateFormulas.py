@@ -1,5 +1,8 @@
+# N = p1^a1 * p2^a2 * …… * pk^ak
 # 约数个数 https://www.acwing.com/problem/content/872/
+# count = (a1+1)*(a2+1)*……*(ak+1)
 # 约数之和 https://www.acwing.com/problem/content/873/
+# sum = (p1^0+p1^1+……+p1^a1)*(p2^0+p2^1+……+p2^a2)*……*(pk^0+pk^1+……+pk^ak)
 
 N = 110
 mod = 10 ** 9 + 7
