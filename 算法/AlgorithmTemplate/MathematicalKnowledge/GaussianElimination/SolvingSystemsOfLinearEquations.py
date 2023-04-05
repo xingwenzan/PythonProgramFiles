@@ -5,7 +5,7 @@ equationSet = [[0.0 for _ in range(N)] for _ in range(N)]
 eps = 1e-8
 
 
-def guess(n):
+def gauss(n):
     row = 0
     for col in range(n):
         tmp = row
@@ -41,7 +41,7 @@ for i in range(n):
     for j in range(n + 1):
         equationSet[i][j] = tmp[j]
 
-judge = guess(n)
+judge = gauss(n)
 if judge == 0:  # 唯一解
     for i in range(n):
         if abs(equationSet[i][n]) < eps: equationSet[i][n] = 0
