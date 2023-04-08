@@ -11,8 +11,7 @@
 def fastPower(base, index, mod):
     ans = 1 % mod
     while index:
-        if index & 1:
-            ans = ans * base % mod
+        if index & 1: ans = ans * base % mod
         base = base * base % mod
         index >>= 1
     return ans
