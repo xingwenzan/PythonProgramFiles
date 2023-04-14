@@ -1,8 +1,8 @@
 # https://zhuanlan.zhihu.com/p/473868966
 
-import turtle as t
 import math as m
 import random as r
+import turtle as t
 
 
 def drawX(a, i):
