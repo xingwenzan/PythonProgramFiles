@@ -1,5 +1,5 @@
 # 左孩子右兄弟 https://www.acwing.com/problem/content/3425/
-# 不知道为啥不好使
+# 数据范围太大，python dfs 不好使
 
 N = 10 ** 5 + 10
 

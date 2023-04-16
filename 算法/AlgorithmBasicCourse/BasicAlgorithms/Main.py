@@ -1,5 +1,5 @@
 """  ---用于实验算法模板---  """
-from 算法.AlgorithmTemplate.BasicAlgorithms import BasicAlgorithmsTemplate
+from 算法.AlgorithmBasicCourse.BasicAlgorithms import BasicAlgorithmsTemplate
 
 # 快排实验/归并实验/逆序对计数实验
 '''

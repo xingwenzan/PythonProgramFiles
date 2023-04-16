@@ -1,6 +1,6 @@
 # https://www.acwing.com/problem/content/3959/
 
-import 算法.AlgorithmTemplate.BasicAlgorithms.BasicAlgorithmsTemplate as BA
+import 算法.AlgorithmBasicCourse.BasicAlgorithms.BasicAlgorithmsTemplate as BA
 
 n = int(input())
 lst = list(map(int,input().split()))
