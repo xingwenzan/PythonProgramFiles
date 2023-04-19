@@ -3,7 +3,7 @@
 # f[i][j] = max(f[i-1][j], f[i-1][j-v[i]]+w[i])
 
 N = 1010
-vi, wi = [0] * N, [0] * N
+v, w = [0] * N, [0] * N
 
 
 def naive(num, volume):
@@ -11,20 +11,20 @@ def naive(num, volume):
     for i in range(1, num + 1):
         for j in range(1, volume + 1):
             alls[i][j] = alls[i - 1][j]
-            if j >= vi[i]: alls[i][j] = max(alls[i][j], alls[i - 1][j - vi[i]] + wi[i])
+            if j >= v[i]: alls[i][j] = max(alls[i][j], alls[i - 1][j - v[i]] + w[i])
     return alls[num][volume]
 
 
 def optimization(num, volume):
     alls = [0] * N
     for i in range(1, num + 1):
-        for j in range(volume, vi[i] - 1, -1):
-            alls[j] = max(alls[j], alls[j - vi[i]] + wi[i])
+        for j in range(volume, v[i] - 1, -1):
+            alls[j] = max(alls[j], alls[j - v[i]] + w[i])
     return alls[volume]
 
 
-n, v = map(int, input().split())
+n, V = map(int, input().split())
 for i in range(1, n + 1):
-    vi[i], wi[i] = map(int, input().split())
-print(naive(n, v))
-print(optimization(n, v))
+    v[i], w[i] = map(int, input().split())
+print(naive(n, V))
+print(optimization(n, V))
