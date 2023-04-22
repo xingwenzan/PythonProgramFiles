@@ -1,5 +1,6 @@
 # 多重背包问题 II https://www.acwing.com/problem/content/5/
 # 多重背包的二进制优化方法，将 s 拆分成 1 2 4 8 …… 2^k …… 2^n s-2^n 个该物品的组合。然后 01
+# 01 朴素版会 MLE，只能用 01 优化版
 import math
 
 N = 1000 * (int(math.log2(2000)) + 1) + 10  # 11010
