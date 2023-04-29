@@ -16,6 +16,7 @@ for i in range(m + 1): sub[0][i] = i
 for i in range(1, n + 1, 1):
     for j in range(1, m + 1, 1):
         sub[i][j] = min(sub[i - 1][j] + 1, sub[i][j - 1] + 1)
+        # sub[i][j] = min(sub[i][j], sub[i - 1][j - 1] + (A[i] != B[j]))   # 与下面的 if 等同
         if A[i] == B[j]:
             sub[i][j] = min(sub[i][j], sub[i - 1][j - 1])
         else:
