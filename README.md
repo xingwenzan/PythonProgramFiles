@@ -4,6 +4,8 @@
 
 ## 目录及简介
 
+> 太懒了，过后补全
+
 - [RFM](RFM) &#x2002; 之前为学习 RFM 数据分析方法而写的代码
 - [其他](其他)  &#x2002; 纯杂物
 - [算法](算法) &#x2002; 为学习算法而写，大部分跟 [`acwing`](https://www.acwing.com/)
@@ -18,4 +20,7 @@
         - [动态规划](算法/AlgorithmBasicCourse/DynamicProgramming) &#x2002;
           包括背包问题，线性DP，区间DP，计数类DP，数位统计DP，状态压缩DP，树形DP，记忆化搜索等内容。
             - [`数位统计DP`](https://www.acwing.com/activity/content/problem/content/1009/) &#x2002; 写起来太麻烦，没写
+            - [状态压缩DP](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP)
+                - [蒙德里安的梦想](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP/MondrianDream.py)
+                -
     - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
