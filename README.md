@@ -23,4 +23,5 @@
             - [状态压缩DP](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP)
                 - [蒙德里安的梦想](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP/MondrianDream.py)
                 - [最短Hamilton路径](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP/ShortestHamiltonPath.py)
+            - [树形DP](算法/AlgorithmBasicCourse/DynamicProgramming/TreeDP.py)
     - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
