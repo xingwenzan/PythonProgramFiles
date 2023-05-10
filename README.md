@@ -25,4 +25,7 @@
                 - [最短Hamilton路径](算法/AlgorithmBasicCourse/DynamicProgramming/StateCompressedDP/ShortestHamiltonPath.py)
             - [树形DP](算法/AlgorithmBasicCourse/DynamicProgramming/TreeDP.py)
             - [记忆化搜索](算法/AlgorithmBasicCourse/DynamicProgramming/MemorySearch.py)
+        - [贪心](算法/AlgorithmBasicCourse/Greed) &#x2002; 包括区间问题，Huffman树，排序不等式，绝对值不等式，推公式等内容。
+            - [区间问题](算法/AlgorithmBasicCourse/Greed/IntervalProblem)
+                - [区间选点](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalPointSelection.py)
     - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
