@@ -29,4 +29,5 @@
             - [区间问题](算法/AlgorithmBasicCourse/Greed/IntervalProblem)
                 - [区间选点、最大不相交区间数量](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalSelection.py)
                 - [区间分组](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalGrouping.py)
+                - [区间覆盖](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalCoverage.py)
     - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
