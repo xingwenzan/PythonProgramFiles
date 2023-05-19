@@ -7,4 +7,5 @@ lst.sort()
 ans = 0
 for i in range(n):
     ans += abs(lst[i] - lst[n // 2])
+    # ans += lst[i] - lst[i//2]   # 两种方法等价
 print(ans)

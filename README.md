@@ -33,5 +33,5 @@
             - [Huffman 树](算法/AlgorithmBasicCourse/Greed/HuffmanTree.py)
           - [排序不等式](算法/AlgorithmBasicCourse/Greed/OrderingInequality.py)
           - [绝对值不等式](算法/AlgorithmBasicCourse/Greed/AbsoluteValueInequality.py)
-          -
+          - [推公式](算法/AlgorithmBasicCourse/Greed/PushFormula.py)
       - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
