@@ -31,4 +31,5 @@
                 - [区间分组](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalGrouping.py)
                 - [区间覆盖](算法/AlgorithmBasicCourse/Greed/IntervalProblem/IntervalCoverage.py)
             - [Huffman 树](算法/AlgorithmBasicCourse/Greed/HuffmanTree.py)
+          - [排序不等式](算法/AlgorithmBasicCourse/Greed/OrderingInequality.py)
     - [其他题解](算法/其他题解) &#x2002; 非系统性学习的题目
