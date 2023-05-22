@@ -39,4 +39,5 @@
           包括数字三角形模型、最长上升子序列模型、背包模型、状态机、状态压缩DP、区间DP、树形DP、数位DP、单调队列优化DP、斜率优化DP等内容
             - [数字三角形模型](算法/Improve/DynamicProgramming/DigitalTriangleModel)
                 - [摘花生](算法/Improve/DynamicProgramming/DigitalTriangleModel/PickingPeanuts.py)
+                - [最低通行费](算法/Improve/DynamicProgramming/DigitalTriangleModel/MinimumToll.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
