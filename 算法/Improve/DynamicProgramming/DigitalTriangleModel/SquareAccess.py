@@ -1,5 +1,5 @@
 # 方格取数 https://www.acwing.com/problem/content/1029/
-# f[k][i1][i2] k 两人各一共走k步 i 一个人横向走了i步 j 另一个人横向走了j步
+# f[k][i1][i2] k 两人各一共走k步 i1 一个人横向走了i1步 i2 另一个人横向走了i2步
 
 T = 22
 w = [[0 for _ in range(T)] for _ in range(T)]

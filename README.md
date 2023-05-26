@@ -41,5 +41,5 @@
                 - [摘花生](算法/Improve/DynamicProgramming/DigitalTriangleModel/PickingPeanuts.py)
                 - [最低通行费](算法/Improve/DynamicProgramming/DigitalTriangleModel/MinimumToll.py)
               - [方格取数](算法/Improve/DynamicProgramming/DigitalTriangleModel/SquareAccess.py)
-              -
+              - [传纸条](算法/Improve/DynamicProgramming/DigitalTriangleModel/PassNote.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
