@@ -46,4 +46,5 @@
                 - [怪盗基德的滑翔翼](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/HangGliding.py)
                 - [登山](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/Mountaineering.py)
               - [合唱队形](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/ChorusFormation.py)
+              - [友好城市](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/SisterCity.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
