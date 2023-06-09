@@ -51,4 +51,6 @@
               - [拦截导弹](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/InterceptorMissile.py)
               - [导弹防御系统](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/Mountaineering.py)
               - [最长公共上升子序列](算法/Improve/DynamicProgramming/LongestAscendingSubsequence/Common.py)
+            - [背包模型](算法/Improve/DynamicProgramming/BackpackModel)
+                - [采药](算法/Improve/DynamicProgramming/BackpackModel/CollectHerbs.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
