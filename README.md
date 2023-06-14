@@ -55,4 +55,6 @@
                 - [采药](算法/Improve/DynamicProgramming/BackpackModel/CollectHerbs.py)
                 - [装箱问题](算法/Improve/DynamicProgramming/BackpackModel/PackingProblem.py)
               - [宠物小精灵之收服](算法/Improve/DynamicProgramming/BackpackModel/PokemonConquer.py)
+              - [数字组合](算法/Improve/DynamicProgramming/BackpackModel/NumberCombinations.py)
+              -
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
