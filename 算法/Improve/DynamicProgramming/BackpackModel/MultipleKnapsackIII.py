@@ -18,8 +18,9 @@ for _ in range(N):
         hh, tt = 0, -1  # 单调队列索引数组窗口的头索引、尾索引，用于框住窗口
         for j in range(i, V + 1, v):
             if hh <= tt and ids[hh] < j - s * v: hh += 1  # 单调队列窗口不空且头在窗口外，砍头
-            while hh <= tt and cf[ids[tt]] - (ids[tt] - i) / v * w <= cf[j] - (j - i) / v * w: tt -= 1  # 保证窗口单调递减，否则断尾
+            while hh <= tt and cf[ids[tt]] - (ids[tt] - i) // v * w <= cf[j] - (
+                    j - i) // v * w: tt -= 1  # 保证窗口单调递减，否则断尾
             tt += 1
             ids[tt] = j
-            f[j] = cf[ids[hh]] + (j - ids[hh]) / v * w  # 更新 f[j] 最大值
-print(int(f[V]))
+            f[j] = cf[ids[hh]] + (j - ids[hh]) // v * w  # 更新 f[j] 最大值
+print(f[V])
