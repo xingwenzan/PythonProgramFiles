@@ -59,4 +59,5 @@
                 - [买书](算法/Improve/DynamicProgramming/BackpackModel/BuyBooks.py)
                 - [货币系统](算法/Improve/DynamicProgramming/BackpackModel/MonetarySystem.py)
                 - [货币系统-NOIP](算法/Improve/DynamicProgramming/BackpackModel/MonetarySystemNOIP.py)
+                - [多重背包问题 III](算法/Improve/DynamicProgramming/BackpackModel/MultipleKnapsackIII.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
