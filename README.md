@@ -61,4 +61,5 @@
                 - [货币系统-NOIP](算法/Improve/DynamicProgramming/BackpackModel/MonetarySystemNOIP.py)
                 - [多重背包问题 III](算法/Improve/DynamicProgramming/BackpackModel/MultipleKnapsackIII.py)
                 - [庆功会](算法/Improve/DynamicProgramming/BackpackModel/VictoryMeeting.py)
+                - [混合背包问题](算法/Improve/DynamicProgramming/BackpackModel/MixedKnapsack.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
