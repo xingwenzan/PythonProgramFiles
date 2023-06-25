@@ -63,4 +63,5 @@
                 - [庆功会](算法/Improve/DynamicProgramming/BackpackModel/VictoryMeeting.py)
                 - [混合背包问题](算法/Improve/DynamicProgramming/BackpackModel/MixedKnapsack.py)
                 - [二维费用的背包问题](算法/Improve/DynamicProgramming/BackpackModel/TwoDimensionalCost.py)
+                - [潜水员](算法/Improve/DynamicProgramming/BackpackModel/Diver.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
