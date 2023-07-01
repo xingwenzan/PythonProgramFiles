@@ -65,5 +65,6 @@
                 - [二维费用的背包问题](算法/Improve/DynamicProgramming/BackpackModel/TwoDimensionalCost.py)
                 - [潜水员](算法/Improve/DynamicProgramming/BackpackModel/Diver.py)
                 - [机器分配](算法/Improve/DynamicProgramming/BackpackModel/MachineDistribution.py)
-                - [开心的金明](算法/Improve/DynamicProgramming/BackpackModel/HappyJinMing.py)
+              - [开心的金明](算法/Improve/DynamicProgramming/BackpackModel/HappyJinMing.py)
+              - [有依赖的背包问题](算法/Improve/DynamicProgramming/BackpackModel/Dependent.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
