@@ -67,5 +67,6 @@
                 - [机器分配](算法/Improve/DynamicProgramming/BackpackModel/MachineDistribution.py)
                 - [开心的金明](算法/Improve/DynamicProgramming/BackpackModel/HappyJinMing.py)
                 - [有依赖的背包问题](算法/Improve/DynamicProgramming/BackpackModel/Dependent.py)
-                - [背包问题求方案数](算法/Improve/DynamicProgramming/BackpackModel/PlanNumber.py)
+              - [背包问题求方案数](算法/Improve/DynamicProgramming/BackpackModel/PlanNumber.py)
+              - [背包问题求具体方案](算法/Improve/DynamicProgramming/BackpackModel/SpecificPlan.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
