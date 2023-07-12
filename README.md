@@ -76,4 +76,5 @@
               - [股票买卖 IV](算法/Improve/DynamicProgramming/StateMachineModel/StockTradingIV.py)
               - [股票买卖 V](算法/Improve/DynamicProgramming/StateMachineModel/StockTradingV.py)
               - [设计密码](算法/Improve/DynamicProgramming/StateMachineModel/DesignPassword.py)
+              - [修复DNA](算法/Improve/DynamicProgramming/StateMachineModel/RepairDNA.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
