@@ -80,4 +80,5 @@
           - [状态压缩DP](算法/Improve/DynamicProgramming/StateCompressionDP)
               - [小国王](算法/Improve/DynamicProgramming/StateCompressionDP/LittleKing.py)
               - [玉米田](算法/Improve/DynamicProgramming/StateCompressionDP/Cornfield.py)
+              - [炮兵阵地](算法/Improve/DynamicProgramming/StateCompressionDP/ArtilleryEmplacement.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
