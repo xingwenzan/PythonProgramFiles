@@ -83,4 +83,6 @@
               - [炮兵阵地](算法/Improve/DynamicProgramming/StateCompressionDP/ArtilleryEmplacement.py)
               - [愤怒的小鸟](算法/Improve/DynamicProgramming/StateCompressionDP/AngryBirds.py)
               - [宝藏](算法/Improve/DynamicProgramming/StateCompressionDP/PreciousDeposits.py)
+          - [区间DP](算法/Improve/DynamicProgramming/IntervalDP)
+              - [环形石子合并](算法/Improve/DynamicProgramming/IntervalDP/RingPebblesMerge.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
