@@ -85,4 +85,5 @@
               - [宝藏](算法/Improve/DynamicProgramming/StateCompressionDP/PreciousDeposits.py)
           - [区间DP](算法/Improve/DynamicProgramming/IntervalDP)
               - [环形石子合并](算法/Improve/DynamicProgramming/IntervalDP/RingPebblesMerge.py)
+              - [能量项链](算法/Improve/DynamicProgramming/IntervalDP/EnergyNecklace.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
