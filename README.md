@@ -92,4 +92,5 @@
           - [树形DP](算法/Improve/DynamicProgramming/TreeDP)
               - [树的最长路径](算法/Improve/DynamicProgramming/TreeDP/TreeLongestPath.py)
               - [树的中心](算法/Improve/DynamicProgramming/TreeDP/TreeCenter.py)
+              - [数字转换](算法/Improve/DynamicProgramming/TreeDP/DigitalConversion.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
