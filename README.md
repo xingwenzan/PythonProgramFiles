@@ -96,4 +96,6 @@
               - [二叉苹果树](算法/Improve/DynamicProgramming/TreeDP/BinaryAppleTree.py)
               - [`战略游戏`](https://www.acwing.com/problem/content/325/)&#x2002;树形 DP + 状态机，由于读入不方便，放弃本题不写
               - [皇宫看守](算法/Improve/DynamicProgramming/TreeDP/PalaceGuard.py)
+          - [数位DP](算法/Improve/DynamicProgramming/DigitalDP)
+              - [度的数量](算法/Improve/DynamicProgramming/DigitalDP/NumberOfDegrees.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
