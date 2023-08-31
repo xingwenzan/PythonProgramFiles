@@ -99,4 +99,5 @@
           - [数位DP](算法/Improve/DynamicProgramming/DigitalDP)
               - [度的数量](算法/Improve/DynamicProgramming/DigitalDP/NumberOfDegrees.py)
               - [数字游戏](算法/Improve/DynamicProgramming/DigitalDP/NumbersGame.py)
+              - [Windy数](算法/Improve/DynamicProgramming/DigitalDP/WindyNumber.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
