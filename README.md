@@ -102,4 +102,5 @@
               - [Windy数](算法/Improve/DynamicProgramming/DigitalDP/WindyNumber.py)
               - [数字游戏 II](算法/Improve/DynamicProgramming/DigitalDP/NumbersGameII.py)
               - [不要62](算法/Improve/DynamicProgramming/DigitalDP/DoNot62.py)
+              - [`恨7不成妻`](https://www.acwing.com/problem/content/1088/)&#x2002;过于复杂，水平不够，懒，不写了
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目

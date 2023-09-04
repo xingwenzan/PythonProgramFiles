@@ -1,8 +1,7 @@
 # 不要62 https://www.acwing.com/problem/content/1087/
 
 N = 11
-f = [[0] * 10 for _ in range(N)]  # f[i,j,k] 最高位为 j，余数是 k，共 i 位的目标数数量
-
+f = [[0] * 10 for _ in range(N)]
 
 def init():  # 采用 DP 方式初始化
     # 一位数
