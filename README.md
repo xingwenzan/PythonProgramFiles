@@ -109,4 +109,5 @@
               - [`旅行问题`](https://www.acwing.com/problem/content/1090/)&#x2002;过于复杂，水平不够，懒，不写了
               - [烽火传递](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/BeaconRelay.py)
               - [绿色通道](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/GreenChannel.py)
+              - [理想的正方形](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/IdealSquare.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
