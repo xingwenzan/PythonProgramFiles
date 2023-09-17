@@ -110,4 +110,6 @@
               - [烽火传递](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/BeaconRelay.py)
               - [绿色通道](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/GreenChannel.py)
               - [理想的正方形](算法/Improve/DynamicProgramming/MonotonicQueueOptimizingDP/IdealSquare.py)
+          - [斜率优化DP](算法/Improve/DynamicProgramming/SlopeOptimizedDP)
+              - [任务安排1](算法/Improve/DynamicProgramming/SlopeOptimizedDP/Task1.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
