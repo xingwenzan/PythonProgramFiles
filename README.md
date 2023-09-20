@@ -113,4 +113,5 @@
           - [斜率优化DP](算法/Improve/DynamicProgramming/SlopeOptimizedDP)
               - [任务安排1](算法/Improve/DynamicProgramming/SlopeOptimizedDP/Task1.py)
               - [任务安排2](算法/Improve/DynamicProgramming/SlopeOptimizedDP/Task2.py)
+              - [任务安排3](算法/Improve/DynamicProgramming/SlopeOptimizedDP/Task3.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
