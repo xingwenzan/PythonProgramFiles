@@ -1,5 +1,5 @@
-from faker import Faker
 import xlwt
+from faker import Faker
 
 num=input('请输入需要创建多少条数据:')
 fake = Faker(locale='zh_CN') # 设置造的数据是中文的

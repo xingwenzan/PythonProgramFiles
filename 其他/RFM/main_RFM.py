@@ -1,10 +1,10 @@
-import pandas as pd
-import time
 import datetime
+import time
+
 import matplotlib.pyplot as plt
-import seaborn as sns
 import numpy as np
-import plotly.express as px
+import pandas as pd
+import seaborn as sns
 
 start=time.time()                    # 记录开始时间
 data=pd.read_csv("C:.\RFM随机数据.csv")           # 读入数据

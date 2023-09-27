@@ -1,6 +1,7 @@
-from faker import Faker
 import csv
 import time
+
+from faker import Faker
 
 num=input('请输入需要创建多少条数据:')
 start=time.time()
