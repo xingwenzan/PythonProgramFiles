@@ -117,4 +117,8 @@
             - [Flood Fill](算法/Improve/Search/FloodFill)
                 - [池塘计数](算法/Improve/Search/FloodFill/PondCount.py)
                 - [城堡问题](算法/Improve/Search/FloodFill/CastleProblem.py)
+    - [《算法竞赛进阶指南》打卡活动](算法/AdvancedGuide)
+      &#x2002;[`《算法竞赛进阶指南》打卡活动`](https://www.acwing.com/activity/content/punch_the_clock/6/)练习打卡
+        - [基本算法](算法/AdvancedGuide/BasicAlgorithms)
+            - [a^b](算法/AdvancedGuide/BasicAlgorithms/a%5Eb.py)
     - [其他题解](算法/Other) &#x2002; 非系统性学习的题目
