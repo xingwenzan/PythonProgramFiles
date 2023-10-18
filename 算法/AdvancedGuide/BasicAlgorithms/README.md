@@ -4,4 +4,4 @@
     - [a^b](a%5Eb.py)
     - [64位整数乘法](64BitIntegerMultiplication.py)
     - [最短Hamilton路径](ShortestHamiltonPath.py)
-    - 
+  - [起床困难综合症](DTOS.py)

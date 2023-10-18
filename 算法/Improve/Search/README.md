@@ -9,3 +9,4 @@
   - [山峰和山谷](PeaksAndValleys.py)
 - 最短路模型
   - [迷宫问题](MazeProblem.py)
+  - [武士风度的牛](SamuraiStyleCow.py)
