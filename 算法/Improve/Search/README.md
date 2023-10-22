@@ -10,3 +10,4 @@
 - 最短路模型
   - [迷宫问题](MazeProblem.py)
   - [武士风度的牛](SamuraiStyleCow.py)
+  - [抓住那头牛](CatchThatCow.py)
