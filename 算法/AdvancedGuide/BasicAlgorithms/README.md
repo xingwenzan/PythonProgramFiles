@@ -9,3 +9,4 @@
     - [递归实现指数型枚举](ExponentialEnumeration.py)
     - [递归实现组合型枚举](CombinationEnumeration.py)
   - [递归实现排列型枚举](ArrangedEnumeration.py)
+  - [费解的开关](ConfusingSwitch.py)
