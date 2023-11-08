@@ -15,3 +15,6 @@
 - [最小步数模型](MinimumStepModel.py)
 - [双端队列广搜](DoubleEndedQueueSearch.py)
 - [双向广搜](TwoWayWideSearch.py)
+- a*
+  - [`第K短路`](https://www.acwing.com/problem/content/180/) &#x2002; 太难了，待定
+  - 
