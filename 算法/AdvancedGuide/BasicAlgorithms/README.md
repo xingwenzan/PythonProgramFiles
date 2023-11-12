@@ -12,3 +12,4 @@
   - [费解的开关](ConfusingSwitch.py)
   - [奇怪的汉诺塔](WeirdHanoiTower.py)
   - [约数之和](DivisorsSum.py)
+  - [分形之城](FractalsCity.py)
