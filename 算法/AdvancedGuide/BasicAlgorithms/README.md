@@ -13,3 +13,5 @@
   - [奇怪的汉诺塔](WeirdHanoiTower.py)
   - [约数之和](DivisorsSum.py)
   - [分形之城](FractalsCity.py)
+- 前缀和与差分
+    - [激光炸弹](LaserBomb.py)
