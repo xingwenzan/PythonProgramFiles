@@ -20,3 +20,4 @@
   - [八数码](EightYards.py)
 - DFS之连通性模型
   - [迷宫](Maze.py)
+  - [红与黑](RedAndBlack.py)

@@ -15,3 +15,4 @@
   - [分形之城](FractalsCity.py)
 - 前缀和与差分
     - [激光炸弹](LaserBomb.py)
+    - [增减序列](IncDec.py)
