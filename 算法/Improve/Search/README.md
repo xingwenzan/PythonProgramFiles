@@ -23,3 +23,4 @@
   - [红与黑](RedAndBlack.py)
 - DFS之搜索顺序
   - [马走日](HorseWalkingDay.py)
+  - [单词接龙](WordSolitaire.py)
