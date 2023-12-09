@@ -28,3 +28,4 @@
 - DFS之剪枝与优化
   - [小猫爬山](KittenClimbingMountain.py)
   - [数独](Sudoku.py)
+  - [木棒](WoodenStick.py)
