@@ -26,6 +26,7 @@
     - [单词接龙](WordSolitaire.py)
     - [分成互质组](https://www.acwing.com/problem/content/1120/) &#x2002; 太麻烦了，不写了
 - DFS之剪枝与优化
-  - [小猫爬山](KittenClimbingMountain.py)
-  - [数独](Sudoku.py)
-  - [木棒](WoodenStick.py)
+    - [小猫爬山](KittenClimbingMountain.py)
+    - [数独](Sudoku.py)
+    - [木棒](WoodenStick.py)
+    - [生日蛋糕](BirthdayCake.py)

@@ -24,3 +24,4 @@
     - [电影](Movie.py)
     - [货仓选址](WarehouseLocationSelection.py)
     - [七夕祭](TanabataFestival.py)
+  - [动态中位数](DynamicMedian.py)
