@@ -30,3 +30,4 @@
     - [数独](Sudoku.py)
     - [木棒](WoodenStick.py)
     - [生日蛋糕](BirthdayCake.py)
+- [迭代加深](IterativeDeepening.py)
