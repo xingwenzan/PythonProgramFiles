@@ -26,3 +26,4 @@
     - [七夕祭](TanabataFestival.py)
   - [动态中位数](DynamicMedian.py)
   - [超快速排序](SuperQuickSort.py)
+  - [奇数码问题](OddNumbers.py)
