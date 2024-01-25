@@ -34,3 +34,4 @@
 - [双向DFS](BidirectionalDFS.py)
 - IDA*
   - [排书](Layout.py)
+  - [回转游戏](SlalomGame.py)

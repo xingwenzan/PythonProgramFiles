@@ -28,3 +28,5 @@
   - [超快速排序](SuperQuickSort.py)
   - [奇数码问题](OddNumbers.py)
 - [倍增](Multiply.py)
+- 贪心
+    - [股票买卖 II](StockjobbingII.py)
