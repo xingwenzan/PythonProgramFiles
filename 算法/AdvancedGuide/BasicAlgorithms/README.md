@@ -31,3 +31,4 @@
 - 贪心
     - [股票买卖 II](StockjobbingII.py)
   - [防晒](SunProtection.py)
+  - [畜栏预定](CorralReservation.py)
