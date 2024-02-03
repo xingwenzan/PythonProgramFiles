@@ -33,3 +33,5 @@
   - [防晒](SunProtection.py)
   - [畜栏预定](CorralReservation.py)
   - [雷达设备](RadarEquipment.py)
+  - [国王游戏](https://www.acwing.com/problem/content/description/116/)
+    &#x2002;高精度太麻烦，不写了，[解析](https://www.acwing.com/solution/content/1062/) 如下
